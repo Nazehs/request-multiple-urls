@@ -1,0 +1,20 @@
+{
+  "name": "request-multiple-urls",
+  "version": "1.0.0",
+  "description": "a tiny package for multiple fetch requests",
+  "main": "index.js",
+  "keywords":["npm", "fetch", "request", "package"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nazehs/request-multiple-urls.git"
+  },
+  "author": "Nazeh Abel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nazehs/request-multiple-urls/issues"
+  },
+  "homepage": "https://github.com/Nazehs/request-multiple-urls#readme"
+}
