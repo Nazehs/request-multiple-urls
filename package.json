@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "a tiny package for multiple fetch requests",
   "main": "index.js",
-  "keywords":["npm", "fetch", "request", "package"],
+  "keywords": [
+    "npm",
+    "fetch",
+    "request",
+    "package"
+  ],
   "scripts": {
+    "build": "babel ./src -d ./lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/Nazehs/request-multiple-urls/issues"
   },
-  "homepage": "https://github.com/Nazehs/request-multiple-urls#readme"
+  "homepage": "https://github.com/Nazehs/request-multiple-urls#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
 }
