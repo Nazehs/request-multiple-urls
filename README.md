@@ -4,6 +4,10 @@
 
 This is a small package that allows you to send multiple requests at the same time
 
+## Dependecies
+
+- node-fetch ^3.1.0
+
 ## Install
 
 ```
@@ -15,4 +19,18 @@ This is a small package that allows you to send multiple requests at the same ti
 
 ```js
 const multipleCall = require("request-multiple-urls");
+const urls = [
+  "https://ft-tech-test-example.s3-eu-west-1.amazonaws.com/ftse-fsi.json",
+];
+multipleCall(urls).then((results) => {
+  console.log(results);
+  for (let result of results) {
+    const {
+      data,
+      data: { items },
+    } = result;
+    console.log(data);
+    console.log(items);
+  }
+});
 ```
