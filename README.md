@@ -35,14 +35,14 @@ The below are the tests that were covered in this package
 ## Installation
 
 ```
- npm install request-multiple-urls
+ npm install request-multiples-urls
 
 ```
 
 ## Usage
 
 ```js
-const multipleCall = require("request-multiple-urls");
+const multipleCall = require("request-multiples-urls");
 const urls = [
   "https://ft-tech-test-example.s3-eu-west-1.amazonaws.com/ftse-fsi.json",
   "https://ft-tech-test-example.s3-eu-west-1.amazonaws.com/gbp-hkd.json",

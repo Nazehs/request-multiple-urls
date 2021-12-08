@@ -1,8 +1,8 @@
 {
-  "name": "request-multiple-urls",
+  "name": "request-multiples-urls",
   "version": "1.0.0",
   "description": "a tiny package for multiple fetch requests",
-  "main": "index.js",
+  "main": "src/index.js",
   "keywords": [
     "npm",
     "fetch",
@@ -13,7 +13,6 @@
     "start": "node src/index.js",
     "lint": "eslint ./src",
     "fix":"eslint --fix-dry-run",
-    "prepublishOnly": "npm run build",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "type": "module",
