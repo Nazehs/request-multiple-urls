@@ -6,7 +6,7 @@ This is a small package that allows you to send multiple requests at the same ti
 
 ## Dependecies
 
-- node-fetch ^3.1.0
+- node-fetch ^2.6.6
 
 node-fetch is an implementation of the native Fetch API for Node.js and has lesser dependencies. It's basically the same as window.fetch so it's easy to implement or extend thus that makes it a best option for the package.
 
