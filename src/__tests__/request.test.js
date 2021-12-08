@@ -1,4 +1,5 @@
 import multipleCall from "../index";
+
 const urls = [
   "https://ft-tech-test-example.s3-eu-west-1.amazonaws.com/ftse-fsi.json",
   "https://ft-tech-test-example.s3-eu-west-1.amazonaws.com/gbp-hkd.json",
@@ -11,7 +12,7 @@ describe("The multiple url request function ", () => {
     multipleCall(urls).then((result) =>
       expect(result).toEqual(
         expect.arrayContaining([
-          expect.objectContaining({ timeGenerated: "2019-11-15T11:08:17" }),
+          expect.objectContaining({ status: "fulfilled" }),
         ])
       )
     ));
@@ -27,13 +28,15 @@ describe("The multiple url request function ", () => {
   // Testing for when the promise is rejected because of invalid url.
   it("tests for error", () => {
     try {
-      const urls = [
+      const url = [
         "https://ft-tech-test-example.s3-eu-west-1.amazonaws.com/ftse-fsi.jsons",
       ];
-      return multipleCall(urls).then((result) =>
-        expect(result).toEqual({
-          message: "Unexpected token < in JSON at position 0",
-        })
+      return multipleCall(url).then((result) =>
+        expect(result).toEqual(
+          expect.arrayContaining([
+            expect.objectContaining({ status: "rejected" }),
+          ])
+        )
       );
     } catch (error) {
       expect(result).toEqual({

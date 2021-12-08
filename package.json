@@ -12,11 +12,11 @@
   "scripts": {
     "start": "node src/index.js",
     "lint": "eslint ./src",
+    "fix":"eslint --fix-dry-run",
     "prepublishOnly": "npm run build",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "type": "module",
-  "transform": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nazehs/request-multiple-urls.git"
@@ -29,6 +29,7 @@
   "homepage": "https://github.com/Nazehs/request-multiple-urls#readme",
   "devDependencies": {
     "eslint": "^8.4.1",
+    "eslint-config-airbnb": "^19.0.2",
     "jest": "^27.4.3",
     "nyc": "^15.1.0"
   },
