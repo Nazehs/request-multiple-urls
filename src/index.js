@@ -1,6 +1,7 @@
 "use strict";
 
 import fetch from "node-fetch";
+
 const multipleCall = async (urls = []) => {
   try {
     // making sure that there param is an array and is not empty
