@@ -1,4 +1,4 @@
-import multipleCall from "../index";
+const multipleCall = require("../index");
 
 const urls = [
   "https://ft-tech-test-example.s3-eu-west-1.amazonaws.com/ftse-fsi.json",

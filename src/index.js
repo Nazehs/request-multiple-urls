@@ -1,6 +1,6 @@
 "use strict";
 
-import fetch from "node-fetch";
+const fetch = require("node-fetch");
 
 const multipleCall = async (urls = []) => {
   try {
@@ -24,4 +24,4 @@ const multipleCall = async (urls = []) => {
   }
 };
 
-export default multipleCall;
+module.exports = multipleCall;
