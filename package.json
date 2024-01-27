@@ -1,6 +1,6 @@
 {
   "name": "request-multiples-urls",
-  "version": "1.0.01.1",
+  "version": "1.0.02",
   "description": "a tiny package for multiple fetch requests",
   "main": "src/index.js",
   "keywords": [
